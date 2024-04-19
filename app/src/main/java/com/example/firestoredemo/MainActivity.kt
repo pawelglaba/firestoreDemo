@@ -116,9 +116,10 @@ class MainActivity : AppCompatActivity() {
      * @param textView TextView, w którym mają zostać wyświetlone dane studenta.
      */
     private fun updateUI(student: Student, textView: TextView) {
-        textView.text = ("Student details: \n" +
-                "name: ${student.name} \n" +
-                "surname: ${student.surname} \n" +
-                "age: ${student.age}")
+        val studentDetails = "Student details:\n" +
+                "Name: ${student.name}\n" +
+                "Surname: ${student.surname}\n" +
+                "Age: ${student.age}"
+        textView.text = studentDetails
     }
 }
